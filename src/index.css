@@ -1,0 +1,493 @@
+* {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.main {
+  max-height: 200vh;
+  background: #0079BF;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: row;
+  background: #0079BF;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #0067A3;
+  color: #FFFFFF;
+  height: 55px;
+  font-size: 28px;
+  line-height: 55px;
+}
+
+.headerTitle {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  background: #0067A3;
+  color: #FFFFFF;
+  height: 55px;
+  font-size: 28px;
+  line-height: 55px;
+}
+
+.headerRightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #0067A3;
+  color: #FFFFFF;
+  height: 55px;
+  width: 134px;
+  font-size: 28px;
+  line-height: 55px;
+}
+
+.vector {
+  background: #0067A3;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+  margin: 22px 22px 22px 7px;
+}
+
+.avatar {
+  background: #0067A3;
+  height: 38px;
+  width: 38px;
+  margin: 8.5px 0px;
+}
+
+.buttonProfile {
+  background: #0067A3;
+  border: none;
+  cursor: pointer;
+}
+
+.vector:hover {
+  fill: rgba(231, 232, 231, 0.267);
+}
+
+.profileContainer {
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  background: #0067A3;
+  height: 55px;
+  width: 134px;
+  line-height: 55px;
+}
+
+.changeProfileContainer {
+  display: flex;
+  flex-direction: column;
+  width: 134px;
+  height: 100px;
+  margin-right: 9px;
+  margin-top: 0px;
+  background: #EBECF0;
+  border-radius: 5px;
+  z-index: 1;
+  border: #0079BF 1px solid;
+}
+
+.rectangle {
+  margin-left: 75px;
+  margin-top: -7px;
+}
+
+.statusSelectorProfile {
+  margin: 0;
+  margin-top: -9px;
+  border-radius: 5px;
+  border-color: white;
+  cursor: pointer;
+  height: 60px;
+}
+
+.taskStringProfile {
+  margin: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.taskStringProfile:hover {
+  background-color: #EBECF0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 306px;
+  margin: 0;
+  max-height: 90vh;
+  background: #0079BF;
+}
+
+.columnContainer {
+  display: block;
+  width: 282px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 20px;
+  margin-bottom: 32px;
+  border-radius: 10px;
+  max-height: 90vh;
+  background: #EBECF0;
+  overflow: scroll;
+  padding-bottom: 48px;
+  padding-top: 44px;
+}
+
+.boardContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: #0079BF;
+  height: calc(100vh - 110px);
+}
+
+.boardContainer2 {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: #0079BF;
+  height: calc(100vh - 110px);
+}
+
+.taskContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 2px 12px 22px 12px;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 282px;
+  margin: 0;
+  background: #EBECF0;
+  border-radius: 10px;
+  max-height: 75vh;
+  overflow: scroll;
+}
+
+.taskHead {
+  margin-left: 24px;
+  margin-right: 12px;
+  margin-top: 37px;
+  margin-bottom: -55px;
+  z-index: 2;
+}
+
+.buttonTaskFoot {
+  margin-left: 25px;
+  margin-top: -75px;
+  height: 29px;
+  width: 102px;
+  border-radius: 5px;
+  color: #5E6C84;
+  display: inline-block;
+  text-align: left;
+  align-items: flex-start;
+  padding: 0px;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+.buttonTaskFoot:hover {
+  background-color: #FFFFFF;
+}
+
+.buttonTaskFootDisabled {
+  margin-left: 25px;
+  margin-top: -75px;
+  height: 29px;
+  width: 102px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  display: inline-block;
+  text-align: left;
+  align-items: flex-start;
+  padding: 0px;
+  border-width: 0px;
+}
+
+
+.taskString {
+  margin: 8px;
+  text-decoration: none;
+}
+
+.taskString:hover {
+  background-color: #EBECF0;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #0067A3;
+  color: #FFFFFF;
+  height: 55px;
+  line-height: 55px;
+
+}
+
+.footerTasks {
+  margin-left: 21px;
+  margin-right: 36px;
+  display: flex;
+  flex-direction: row;
+  color: #FFFFFF;
+  height: 55px;
+  line-height: 55px;
+}
+
+.footerTask {
+  color: #FFFFFF;
+  height: 55px;
+  line-height: 55px;
+  width: 175px;
+}
+
+.footerName {
+  margin-right: 19px;
+  color: #FFFFFF;
+  height: 55px;
+  line-height: 55px;
+}
+
+.changeCardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 258px;
+  margin-left: 24px;
+  margin-top: -25px;
+  background: #EBECF0;
+  border-radius: 5px;
+}
+
+.addingCardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 258px;
+  margin-left: 24px;
+  margin-top: -60px;
+  background: #EBECF0;
+  border-radius: 5px;
+}
+
+.statusSelector {
+  margin: 0;
+  border-radius: 5px;
+  border-color: white;
+  cursor: pointer;
+  height: 85px;
+}
+
+.buttonSubmit {
+  margin-left: 2px;
+  margin-top: 30px;
+  height: 29px;
+  width: 102px;
+  border-radius: 5px;
+  background: #0079BF;
+  color: #FFFFFF;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  padding: 0px;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+.buttonSubmit:hover {
+  background-color: #0067A3;
+}
+
+.inputTaskName {
+  margin-left: -1px;
+  margin-top: -35px;
+  border-radius: 5px;
+  border-color: white;
+  width: 260px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.taskDescription {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+
+  align-items: flex-start;
+  flex-direction: column;
+  background: #FFFFFF;
+  height: calc(100vh - 150px);
+  width: calc(100vw - 50px);
+
+}
+
+.headerCard {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  background: #FFFFFF;
+
+  width: calc(100vw - 50px);
+
+
+}
+
+.titleTaskDescription {
+  margin-left: 28px;
+  margin-right: 28px;
+  margin-top: 22px;
+  /* width: 80vw; */
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.inputTaskDescription {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: start; */
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 35px;
+  max-height: 80vh;
+  width: calc(100vw - 110px);
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+
+}
+
+
+.inputText {
+  display: flex;
+  text-align: left;
+  vertical-align: top;
+  border-color: white;
+  width: 100vw;
+  height: 70vh;
+  min-width: calc(100vw - 150px);
+}
+
+.LinkDescriptionSubmit {
+  margin-top: 0px;
+  margin-left: 0px;
+  text-decoration: none;
+  color: red;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 0px;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+.cross {
+  fill: black;
+}
+
+.cross:hover {
+  fill: #5E6C84;
+}
+
+@media (max-width: 1230px) {
+  .boardContainer {
+    width: 620px;
+  }
+
+  .column {
+    max-height: 40vh;
+  }
+
+  .cardContainer {
+    max-height: 30vh;
+  }
+
+  .inputText {
+    height: 65vh;
+  }
+
+}
+
+/* End of @media (max-width: 1230px) */
+
+@media (max-width: 720px) {
+  .footerName {
+    display: none;
+  }
+
+}
+
+/* End of @media (max-width: 720px) */
+
+@media (max-width: 615px) {
+
+  .headerTitle,
+  .footerContainer {
+    display: none;
+  }
+
+  .inputText {
+    height: 45vh;
+  }
+
+  .headerContainer {
+    justify-content: end;
+  }
+
+  .appContainer {
+    height: 350vw;
+  }
+
+  .boardContainer {
+    width: 305px;
+  }
+
+  .column {
+    max-height: 40vh;
+    margin-top: 20px;
+  }
+
+  .cardContainer {
+    max-height: 27vh;
+  }
+
+}
+
+/* End of @media (max-width: 615px) */
