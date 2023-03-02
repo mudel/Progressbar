@@ -10,8 +10,7 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   height: 100%;
 }
 
@@ -74,14 +73,14 @@ body {
   margin: 8.5px 0px;
 }
 
-.buttonProfile {
+.buttonProfile { 
   background: #0067A3;
   border: none;
   cursor: pointer;
 }
 
 .vector:hover {
-  fill: rgba(231, 232, 231, 0.267);
+  fill:  rgba(231, 232, 231, 0.267);
 }
 
 .profileContainer {
@@ -108,7 +107,7 @@ body {
   border: #0079BF 1px solid;
 }
 
-.rectangle {
+.rectangle{
   margin-left: 75px;
   margin-top: -7px;
 }
@@ -181,7 +180,7 @@ body {
   flex-direction: column;
   margin: 2px 12px 22px 12px;
   background: #FFFFFF;
-  border-radius: 5px;
+  border-radius: 5px;  
 }
 
 .cardContainer {
@@ -216,11 +215,12 @@ body {
   padding: 0px;
   border-width: 0px;
   cursor: pointer;
+  background-color: #EBECF0;
 }
 
 .buttonTaskFoot:hover {
   background-color: #FFFFFF;
-}
+} 
 
 .buttonTaskFootDisabled {
   margin-left: 25px;
@@ -234,6 +234,7 @@ body {
   align-items: flex-start;
   padding: 0px;
   border-width: 0px;
+  background-color: #EBECF0;
 }
 
 
@@ -254,7 +255,7 @@ body {
   color: #FFFFFF;
   height: 55px;
   line-height: 55px;
-
+  
 }
 
 .footerTasks {
@@ -326,8 +327,8 @@ body {
 }
 
 .buttonSubmit:hover {
-  background-color: #0067A3;
-}
+  background-color:  #0067A3;
+} 
 
 .inputTaskName {
   margin-left: -1px;
@@ -343,26 +344,26 @@ body {
   margin: 0 auto;
   margin-top: 20px;
   display: flex;
-
-  align-items: flex-start;
-  flex-direction: column;
+    
+    align-items: flex-start;
+    flex-direction: column;
   background: #FFFFFF;
   height: calc(100vh - 150px);
   width: calc(100vw - 50px);
-
+  
 }
 
 .headerCard {
   margin: 0 auto;
   margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;
-
-  justify-content: space-between;
+    flex-wrap: wrap;
+    
+    justify-content: space-between; 
   background: #FFFFFF;
-
+  
   width: calc(100vw - 50px);
-
+  
 
 }
 
@@ -386,14 +387,13 @@ body {
   width: calc(100vw - 110px);
 }
 
-input,
-textarea {
+input, textarea {
   outline: none;
   border: none;
   resize: none;
 
-}
-
+  }
+  
 
 .inputText {
   display: flex;
@@ -407,7 +407,7 @@ textarea {
 
 .LinkDescriptionSubmit {
   margin-top: 0px;
-  margin-left: 0px;
+  margin-left: 0px; 
   text-decoration: none;
   color: red;
   display: flex;
@@ -421,73 +421,65 @@ textarea {
 .cross {
   fill: black;
 }
-
 .cross:hover {
-  fill: #5E6C84;
-}
+  fill:  #5E6C84;
+} 
 
 @media (max-width: 1230px) {
-  .boardContainer {
-    width: 620px;
-  }
-
-  .column {
-    max-height: 40vh;
-  }
-
-  .cardContainer {
-    max-height: 30vh;
-  }
-
-  .inputText {
-    height: 65vh;
-  }
-
+.boardContainer {
+  width: 620px;
+}
+  
+.column {
+  max-height: 40vh;
 }
 
-/* End of @media (max-width: 1230px) */
-
-@media (max-width: 720px) {
-  .footerName {
-    display: none;
-  }
-
+.cardContainer {
+  max-height: 30vh;
 }
 
-/* End of @media (max-width: 720px) */
+.inputText {
+  height: 65vh;
+}  
 
-@media (max-width: 615px) {
+} /* End of @media (max-width: 1230px) */
 
-  .headerTitle,
-  .footerContainer {
-    display: none;
-  }
+  @media (max-width: 720px) {
+    .footerName {
+      display: none;
+    }
+        
+    } /* End of @media (max-width: 720px) */
 
-  .inputText {
-    height: 45vh;
-  }
+    @media (max-width: 615px) {
+      .headerTitle, .footerContainer {
+        display: none;
+      }
 
-  .headerContainer {
-    justify-content: end;
-  }
+      .inputText {
+        height: 45vh;
+      }  
 
-  .appContainer {
-    height: 350vw;
-  }
+      .headerContainer {
+        justify-content: end;
+      }  
 
-  .boardContainer {
-    width: 305px;
-  }
+      .appContainer {
+        height: 350vw;      
+      }
 
-  .column {
-    max-height: 40vh;
-    margin-top: 20px;
-  }
-
-  .cardContainer {
-    max-height: 27vh;
-  }
-
-}
-
-/* End of @media (max-width: 615px) */
+      .boardContainer {
+        width: 305px;
+      }
+        
+      .column {
+        max-height: 40vh;
+        margin-top: 20px;
+      }
+      
+      .cardContainer {
+        max-height: 27vh;
+      }
+      
+      } /* End of @media (max-width: 615px) */
+      
